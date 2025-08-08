@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azan World - Text to Speech AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Azan World</h1>
+        <p>Text to Speech AI</p>
+    </header>
+
+    <main>
+        <textarea id="tts-text" placeholder="Type your text here (max 50000 characters)"></textarea>
+        <div class="controls">
+            <select id="voice-select">
+                <option value="21m00Tcm4TlvDq8ikWAM">Alloy</option>
+                <option value="EXAVITQu4vr4xnSDxMaL">Bella</option>
+                <option value="ErXwobaYiN019PkySvjV">Antoni</option>
+            </select>
+            <button id="convert-btn">Convert to Speech</button>
+        </div>
+        <div id="error"></div>
+        <div id="loader" class="hidden">Generating audio...</div>
+        <audio id="audio-player" controls class="hidden"></audio>
+        <button id="download-btn" class="hidden">Download .mp3</button>
+    </main>
+
+    <footer>
+        <p>Built with ❤️ — Azan World</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
